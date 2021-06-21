@@ -1,0 +1,137 @@
+<div class="menu d-flex align-items-center">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Clientes</a></li>
+        <li><a href="#">Editar</a></li>
+        <li><a href="#">Eliminar</a></li>
+        <li><a href="#">Agregar Clientes</a></li>
+        <li><a [routerLink]="['/login']"> Cerrar Sesión <i class="fas fa-window-close"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col" *ngFor="let cliente of clientes">
+        <div class="card" style="width: 18rem;">
+          <a [routerLink]="['/cliente', cliente.id]">
+            <img [src]="cliente.avatar" [alt]="cliente.first_name"class="card-img-top" alt="...">
+          </a>
+            <div class="card-body">
+              <a [routerLink]="['/cliente', cliente.id]">
+              <h5 class="card-title">{{cliente.first_name}}</h5>
+              </a>
+              <p class="card-text">{{cliente.email}}</p>
+              <a class="eliminaruser"><i class="fas fa-user-times"></i></a>
+              <a class="editaruser"><i class="fas fa-user-edit"></i></a>
+              <a class="agregaruser"><i class="fas fa-user-plus"></i></a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nombre</h5>
+              <p class="card-text">Correo</p>
+              <a class="eliminaruser"><i class="fas fa-user-times"></i></a>
+              <a class="editaruser"><i class="fas fa-user-edit"></i></a>
+              <a class="agregaruser"><i class="fas fa-user-plus"></i></a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nombre</h5>
+              <p class="card-text">Correo</p>
+              <a class="eliminaruser"><i class="fas fa-user-times"></i></a>
+              <a class="editaruser"><i class="fas fa-user-edit"></i></a>
+              <a class="agregaruser"><i class="fas fa-user-plus"></i></a>
+            </div>
+          </div>
+      </div>
+    </div><br><br><br><br>
+    <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Nombre</h5>
+                <p class="card-text">Correo</p>
+                <a class="eliminaruser"><i class="fas fa-user-times"></i></a>
+                <a class="editaruser"><i class="fas fa-user-edit"></i></a>
+                <a class="agregaruser"><i class="fas fa-user-plus"></i></a>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Nombre</h5>
+                <p class="card-text">Correo</p>
+                <a class="eliminaruser"><i class="fas fa-user-times"></i></a>
+                <a class="editaruser"><i class="fas fa-user-edit"></i></a>
+                <a class="agregaruser"><i class="fas fa-user-plus"></i></a>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Nombre</h5>
+                <p class="card-text">Correo</p>
+                <a class="eliminaruser"><i class="fas fa-user-times"></i></a>
+                <a class="editaruser"><i class="fas fa-user-edit"></i></a>
+                <a class="agregaruser"><i class="fas fa-user-plus"></i></a>
+              </div>
+            </div>
+        </div>
+      </div><br><br><br><br>
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Nombre</h5>
+                <p class="card-text">Correo</p>
+                <a class="eliminaruser"><i class="fas fa-user-times"></i></a>
+                <a class="editaruser"><i class="fas fa-user-edit"></i></a>
+                <a class="agregaruser"><i class="fas fa-user-plus"></i></a>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Nombre</h5>
+                <p class="card-text">Correo</p>
+                <a class="eliminaruser"><i class="fas fa-user-times"></i></a>
+                <a class="editaruser"><i class="fas fa-user-edit"></i></a>
+                <a class="agregaruser"><i class="fas fa-user-plus"></i></a>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Nombre</h5>
+                <p class="card-text">Correo</p>
+                <a class="eliminaruser"><i class="fas fa-user-times"></i></a>
+                <a class="editaruser"><i class="fas fa-user-edit"></i></a>
+                <a class="agregaruser"><i class="fas fa-user-plus"></i></a>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+</div>

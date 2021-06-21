@@ -1,0 +1,58 @@
+.eliminaruser{
+    color: #a01515;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.editaruser{
+    color: rgb(161, 157, 157);
+    font-size: 30px;
+}
+
+.agregaruser{
+    color: rgb(73, 189, 73);
+    font-size: 30px;
+    margin: 10px;
+}
+
+.menu{
+   width: 100%; 
+   height: 50px;
+}
+
+header {
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+
+  nav {
+    float: left; 
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li:hover {
+    background: #a01515;
+  }
+
+  li .closeon{
+      float: right;
+  }

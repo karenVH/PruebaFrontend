@@ -1,0 +1,22 @@
+<img src="../../../assets/imagenes/fondo1.jpg" class="img-fluid" width="100%"
+    style="position: absolute; right: 0; top: 0; z-index: -100; opacity: 0.75;">
+<div class="container">
+    <div class="form-group">
+        <div class="icon">
+            <span><i class="fas fa-user-cog"></i></span>
+            <div class="contentForm">
+                <form action="" method="POST" name="FormLogin">
+                    <input type="text" placeholder="Nombre Completo">
+                    <input type="email" placeholder="Correo Electronico">
+                    <input type="text" placeholder="Nombre de Usuario">
+                    <input type="password" placeholder="Contraseña">
+
+
+                    <button class="loginbtn" type="submit">Registrarse</button>
+                    <h3>¿ya tienes cuenta? <a [routerLink]="['/login']">Volver al inicio</a></h3>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
